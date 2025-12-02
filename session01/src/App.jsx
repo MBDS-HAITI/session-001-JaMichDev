@@ -21,6 +21,16 @@ function Header() {
   );
 }
 
+function MainContent() {
+  return (
+   <>
+       <div>
+            <p>Ici, nous afficherons des informations interessantes :) </p>
+       </div>
+   </>
+  );
+}
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -28,6 +38,7 @@ function App() {
     <>
       <div>
            <Header />
+           <MainContent />
       </div>
 
       
