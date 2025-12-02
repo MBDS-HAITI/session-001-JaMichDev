@@ -52,21 +52,9 @@ function App() {
            <Footer />
           
       </div>
-
-      
-
-
+    
     </>
   )
 }
-
-const todo = {
-  title: "Todo 1",
-  description:"Description 1",
-  status: "completed"
-};
-
-const{title,description,staus}=todo
-console.log(...todo)
 
 export default App
