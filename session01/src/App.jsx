@@ -31,6 +31,16 @@ function MainContent() {
   );
 }
 
+function Footer() {
+  return (
+   <>
+       <div>
+            <p>Tous droits réservés - [Michel] [Jasmin]</p>
+       </div>
+   </>
+  );
+}
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -39,6 +49,7 @@ function App() {
       <div>
            <Header />
            <MainContent />
+          
       </div>
 
       
@@ -53,5 +64,8 @@ const todo = {
   description:"Description 1",
   status: "completed"
 };
+
+const{title,description,staus}=todo
+console.log(...todo)
 
 export default App
