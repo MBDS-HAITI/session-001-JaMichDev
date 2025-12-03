@@ -5,6 +5,8 @@ import './App.css'
 import {Header} from './components/HeaderApp.jsx';
 import {MainContent, Todo} from './components/BodyApp.jsx';
 import {Footer} from './components/FooterApp.jsx';
+import {NoteDetail} from './components/NoteDetail.jsx';
+import data from './assets/data.json';
 
 
 function App() {
@@ -23,7 +25,8 @@ function App() {
       description: "ceci est la description de ma quatrième tache"
     }
   ]
-    
+   
+  const randomItem = data[Math.floor(Math.random() * data.length)];
 
   return (
     <>
@@ -34,6 +37,10 @@ function App() {
            <Todo {...todo}/>   
            <Todo {...todos[0]}/> 
            <Todo {...todos[1]}/>  
+
+           <p>---------------------------TD03 : Utiliser les props---------------------------</p>
+          
+           <NoteDetail randomItem={randomItem} />
            <Footer/>
                 
       </div>
