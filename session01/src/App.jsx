@@ -2,26 +2,12 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import mbdsLogo from '/mbds_logo_transparent.svg'
 import './App.css'
+import {Header} from './components/HeaderApp.jsx'
+import {Footer} from './components/FooterApp.jsx'
 import {StaticDateTime} from './components/StaticDate.jsx'
-import {DynamicDateTime} from './components/DynamicDate.jsx'
 
-function Header() {
-  return (
-   <>
-       <div>
-            <a href="https://fds.edu.ht/inscriptionMBDS/user/login" target="_blank">
-                <img src={mbdsLogo} className="logo" alt="Vite logo" />
-            </a>
-            <a href="https://react.dev" target="_blank">
-               <img src={reactLogo} className="logo react" alt="React logo" />
-            </a>
 
-            <h1>Introduction à React</h1>
-            <h2>À la découverte des premières notions de React</h2>
-       </div>
-   </>
-  );
-}
+
 
 function MainContent() {
   return (
@@ -33,15 +19,7 @@ function MainContent() {
   );
 }
 
-function Footer() {
-  return (
-   <>
-       <div>
-            <p>Tous droits réservés - [Michel] [Jasmin]</p>
-       </div>
-   </>
-  );
-}
+
 
 function Todo({title,description}){
   return(
@@ -83,7 +61,7 @@ function App() {
            <Todo {...todos[0]}/> 
            <Todo {...todos[1]}/>  
            <StaticDateTime/>  
-           <DynamicDateTime/>     
+            
       </div>
     
     </>
