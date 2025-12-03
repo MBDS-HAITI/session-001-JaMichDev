@@ -1,3 +1,5 @@
+import { Matieres } from "./Matieres.jsx";
+
 function MenuContent({ selectedMenu }) {
   switch (selectedMenu) {
     case "Notes":
@@ -7,7 +9,12 @@ function MenuContent({ selectedMenu }) {
       return <h2>Liste des Étudiants</h2>;
 
     case "Matières":
-      return <h2>Programme des Matières</h2>;
+      return (
+        <>
+          <h2>Liste des Matières</h2>
+          <Matieres />
+        </>
+      );
 
     case "A propos":
       return <h2>À propos de l'application</h2>;

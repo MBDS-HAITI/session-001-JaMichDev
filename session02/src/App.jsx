@@ -1,9 +1,17 @@
 import { useState } from 'react'
-import {Header} from '../components/Header.jsx';
-import {MainContent} from '../components/MainContent.jsx';
-import {Footer} from '../components/Footer.jsx';
-import {MenuItem} from '../components/Menu.jsx';
-import { MenuContent } from '../components/MenuContent.jsx';
+import {Header} from './components/Header.jsx';
+import {MainContent} from './components/MainContent.jsx';
+import {Footer} from './components/Footer.jsx';
+import {MenuItem} from './components/Menu.jsx';
+import { MenuContent } from './components/MenuContent.jsx';
+
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
 
 import './App.css'
 
