@@ -8,7 +8,7 @@ async function main() {
   await client.connect();
   console.log("Connecté au cluster MongoDB.");
 
-  const raw = fs.readFileSync("./data.json", "utf8");
+  const raw = fs.readFileSync("./courses.json", "utf8");
   const docs = JSON.parse(raw);
 
   for (const d of docs) {
@@ -18,8 +18,8 @@ async function main() {
     }
   }
 
-  const db = client.db("student_management");
-  const coll = db.collection("grades");
+  const db = client.db("test");
+  const coll = db.collection("courses");
 
   const result = await coll.insertMany(docs);
   console.log(`Import terminé – documents insérés : ${result.insertedCount}`);

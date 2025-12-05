@@ -7,7 +7,7 @@ async function main() {
  // const uri = process.env.MONGODB_URI || "mongodb+srv://ingmicheljasmin_db_user:Cluster0_Mi_06@cluster0.pviohoc.mongodb.net/?appName=Cluster0";
   const uri = 'mongodb+srv://ingmicheljasmin_db_user:Cluster0_Mi_06@cluster0.pviohoc.mongodb.net/?appName=Cluster0';
   // Nom de la base et de la collection
-  const dbName = "student_management";
+  const dbName = "test";
   const collName = "grades";
 
   const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });

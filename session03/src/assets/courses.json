@@ -1,0 +1,38 @@
+[
+    {
+        "unique_id": 1,
+        "name": "Math 101",
+		"code": "101"
+
+    },
+    {
+        "unique_id": 2,
+		"name": "Physics",
+		"code": "505"
+    },
+    {
+        "unique_id": 3,
+		"name": "Chemistry",
+		"code": "606"
+    },
+    {
+        "unique_id": 4,
+		"name": "History",
+		"code": "303"
+    },
+    {
+        "unique_id": 5,	
+		"name": "Biology",
+		"code": "404"
+    },
+    {
+        "unique_id": 6,	
+		"name": "English",
+		"code": "202"
+    },
+    {
+        "unique_id": 7,
+		"name": "CS",
+		"code": "707"
+    }
+]
