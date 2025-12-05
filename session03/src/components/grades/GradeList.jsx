@@ -61,40 +61,43 @@ const GradeList = () => {
         Grades List
       </Typography>
       
-      <Grid container spacing={2} sx={{ marginBottom: 3 }}>
-        <Grid item xs={12} sm={6} md={3}>
-          <Card elevation={2}>
-            <CardContent sx={{ textAlign: 'center', backgroundColor: '#e3f2fd' }}>
-              <Typography variant="h4" color="primary">{grades.length}</Typography>
-              <Typography variant="body2">Total Grades</Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item xs={12} sm={6} md={3}>
-          <Card elevation={2}>
-            <CardContent sx={{ textAlign: 'center', backgroundColor: '#e8f5e9' }}>
-              <Typography variant="h4" color="success.main">{passCount}</Typography>
-              <Typography variant="body2">Passing (≥70)</Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item xs={12} sm={6} md={3}>
-          <Card elevation={2}>
-            <CardContent sx={{ textAlign: 'center', backgroundColor: '#ffebee' }}>
-              <Typography variant="h4" color="error">{failCount}</Typography>
-              <Typography variant="body2">Failing (&lt;70)</Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item xs={12} sm={6} md={3}>
-          <Card elevation={2}>
-            <CardContent sx={{ textAlign: 'center', backgroundColor: '#fff3e0' }}>
-              <Typography variant="h4" color="warning.main">{averageGrade}</Typography>
-              <Typography variant="body2">Average Grade</Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-      </Grid>
+<Grid container columns={12} spacing={2} sx={{ marginBottom: 3 }}>
+  <Grid size={{ xs: 12, sm: 6, md: 3 }}>
+    <Card elevation={2}>
+      <CardContent sx={{ textAlign: 'center', backgroundColor: '#e3f2fd' }}>
+        <Typography variant="h4" color="primary">{grades.length}</Typography>
+        <Typography variant="body2">Total Grades</Typography>
+      </CardContent>
+    </Card>
+  </Grid>
+
+  <Grid size={{ xs: 12, sm: 6, md: 3 }}>
+    <Card elevation={2}>
+      <CardContent sx={{ textAlign: 'center', backgroundColor: '#e8f5e9' }}>
+        <Typography variant="h4" color="success.main">{passCount}</Typography>
+        <Typography variant="body2">Passing (≥70)</Typography>
+      </CardContent>
+    </Card>
+  </Grid>
+
+  <Grid size={{ xs: 12, sm: 6, md: 3 }}>
+    <Card elevation={2}>
+      <CardContent sx={{ textAlign: 'center', backgroundColor: '#ffebee' }}>
+        <Typography variant="h4" color="error">{failCount}</Typography>
+        <Typography variant="body2">Failing (&lt;70)</Typography>
+      </CardContent>
+    </Card>
+  </Grid>
+
+  <Grid size={{ xs: 12, sm: 6, md: 3 }}>
+    <Card elevation={2}>
+      <CardContent sx={{ textAlign: 'center', backgroundColor: '#fff3e0' }}>
+        <Typography variant="h4" color="warning.main">{averageGrade}</Typography>
+        <Typography variant="body2">Average Grade</Typography>
+      </CardContent>
+    </Card>
+  </Grid>
+</Grid>
 
       <Box sx={{ display: 'flex', gap: 2, marginBottom: 3 }}>
         <FormControl sx={{ minWidth: 200 }}>
